@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdnlrb4xpk8cq"]
+
+[ext_resource type="PackedScene" uid="uid://dm8s3mcyornhy" path="res://scenes/player.tscn" id="1_y8hx3"]
+
+[sub_resource type="TileSet" id="TileSet_aobup"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_y8hx3")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_aobup")
+format = 2
